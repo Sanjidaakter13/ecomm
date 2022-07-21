@@ -38,7 +38,7 @@
 
     <label for="">Select category</label>
     <select class="custom-select" name="category">
-  <option selected>Open this select </option>
+  <option>Open this select </option>
   @foreach($categories as $cat)
   <option value="{{$cat->id}}">{{$cat->name}}</option>
   @endforeach

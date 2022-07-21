@@ -29,4 +29,20 @@ class CategoryController extends Controller
       ]);
       return redirect()->route('category.list');
     }
+
+    public function delete($id)
+    {
+     // variable=model name::to find something we use find method
+        $category=Category::find($id);
+        $category->delete();
+        return redirect()->back();
+
+    //  Category::where('id',$id)->first(); [another way]
+    }
+
+    public function view($id)
+    {
+        $category=Category::find($id);
+      return view('backend.category.view',compact('category'))  ;
+    }
 }
