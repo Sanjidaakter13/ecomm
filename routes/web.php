@@ -22,6 +22,8 @@ use App\Http\Controllers\Backend\BrandController;
 Route::get('/',[Maincontroller::class, 'master']);
 Route::get('/dashboard',[Maincontroller::class, 'view'])->name('dashboard');
 
+
+
 Route::get('/product-list',[ProductController::class, 'list'])->name('product.list');
 Route::get('/product-form',[ProductController::class, 'form'])->name('product.form');
 Route::post('/product-store',[ProductController::class, 'store'])->name('product.store');
