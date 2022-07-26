@@ -11,12 +11,12 @@
     </tr>
   </thead>
   <tbody>
-    @foreach($brands as $data)
-    <tr>
+   @foreach($brands as $data)
+   <tr>
      <td>{{$data->name}}</td>
      <td>{{$data->description}}</td>
-    </tr>
-    @endforeach
+   </tr>
+   @endforeach
   </tbody>
 </table>
 

@@ -3,8 +3,8 @@
 @section('content')
 
 <form action="{{route('brand.store')}}" method="post">
-
 @csrf
+
   <div class="form-group">
     <label for="exampleFormControlInput1">Name</label>
     <input type="text" name="brand_name" class="form-control" id="exampleFormControlInput1" placeholder="name">

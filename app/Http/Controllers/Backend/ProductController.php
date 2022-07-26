@@ -28,7 +28,7 @@ class ProductController extends Controller
     {
 
         $request->validate([
-            //input field name=> vlidation rule
+            //input field name=> validation rule
             'name'=>'required',
             'price'=>'required|integer|min:10',
             'quantity'=>'required|integer|min:1',

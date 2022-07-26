@@ -6,7 +6,7 @@ use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\CustomerController;
 use App\Http\Controllers\Backend\BrandController;
-
+use App\Http\Controllers\Frontend\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +18,17 @@ use App\Http\Controllers\Backend\BrandController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/',[HomeController::class,'home'])->name('home');
+Route::get('/view-home',[HomeController::class,'view_home'])->name('home.view');
 
-Route::get('/',[Maincontroller::class, 'master']);
+
+
+
+
+
+
+
+Route::get('/admin',[Maincontroller::class, 'master']);
 Route::get('/dashboard',[Maincontroller::class, 'view'])->name('dashboard');
 
 Route::get('/product-list',[ProductController::class, 'list'])->name('product.list');
