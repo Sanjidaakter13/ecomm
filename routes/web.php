@@ -7,6 +7,7 @@ use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\CustomerController;
 use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\CustomerController as FrontendCustomer;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +20,10 @@ use App\Http\Controllers\Frontend\HomeController;
 |
 */
 Route::get('/',[HomeController::class,'home'])->name('home');
-Route::get('/view-home',[HomeController::class,'view_home'])->name('home.view');
-
-
+//Route::get('/view-home',[HomeController::class,'view_home'])->name('home.view');
+Route::get('/registration',[FrontendCustomer::class,'registration'])->name('registration');
+Route::post('/do_registration',[FrontendCustomer::class,'do_registration'])->name('do-regitraton');
+Route::post('/do_login',[FrontendCustomer::class,'do_login'])->name('do-login');
 
 
 
