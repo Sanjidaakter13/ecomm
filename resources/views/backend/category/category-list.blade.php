@@ -28,7 +28,7 @@
       <td>{{$category->updated_at}}</td>
       <td>
         <a class="btn btn-success" href="{{route('category.view',$category->id)}}">View</a>
-        <a class="btn btn-primary" href="">Edit</a>
+        <a class="btn btn-primary" href="{{route('category.edit',$category->id)}}">Edit</a>
         <a class="btn btn-danger" href="{{route('category.delete',$category->id)}}">Delete</a>
       </td>
     </tr>

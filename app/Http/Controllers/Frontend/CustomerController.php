@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CustomerController extends Controller
 {
@@ -27,10 +28,12 @@ class CustomerController extends Controller
 
     public function do_login(Request $request)
     {
+        
         $check=Auth::attempt([
             'email'=>$request->email,
-            'password'=>bcrypt($request->password), 
+            'password'=>$request->password, 
         ]);
+    
         return redirect()->route('home');
     }
 

@@ -45,4 +45,10 @@ class CategoryController extends Controller
         $category=Category::find($id);
       return view('backend.category.view',compact('category'))  ;
     }
+
+    public function edit($id)
+    {
+        $category=Category::find($id);
+        return view('backend.category.edit',compact('category'));
+    }
 }

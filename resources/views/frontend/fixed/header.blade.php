@@ -1,5 +1,4 @@
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
 
@@ -19,15 +18,20 @@
                     </div>
                 </div>
                 <div class="ht-right">
-                      <!-- Button trigger modal -->
-                        @guest 
+                   @guest
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                             Login
                         </button>
-                        @endguest
-                     @auth                
-                    <a class="btn btn-primary" href="{{route('do-logout')}}">Logout</a>
-                    @endauth
+                  
+                                        <!-- Button trigger modal -->
+                   @endguest
+
+
+                  @auth
+                  <a class="btn btn-primary" href="{{route('logout')}}">Logout</a>| {{auth()->user()->name}}
+                  @endauth
+    
+
                     <a class="btn btn-primary" href="{{route('registration')}}">Register</a>
 
 
@@ -387,17 +391,18 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form>
+      <form action="{{route('do-login')}}" method="post">
+        @csrf
   <div class="form-group row">
     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email">
     </div>
   </div>
   <div class="form-group row">
     <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="password">
     </div>
   </div>
  
