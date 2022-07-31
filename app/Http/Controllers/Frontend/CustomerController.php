@@ -20,7 +20,7 @@ class CustomerController extends Controller
        User::create([
         'name'=>$request->name,
         'email'=>$request->email,
-        'password'=>$request->password,
+        'password'=>bcrypt($request->password),
        ]) ;
        return redirect()->route('home');
     }
@@ -28,8 +28,17 @@ class CustomerController extends Controller
     public function do_login(Request $request)
     {
         $check=Auth::attempt([
-
+            'email'=>$request->email,
+            'password'=>bcrypt($request->password), 
         ]);
+        return redirect()->route('home');
+    }
+
+    public function do_logout()
+    {
+        Auth::logout();
+
+        return redirect()->route('home');
     }
 }
 

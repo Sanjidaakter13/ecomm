@@ -19,14 +19,15 @@
                     </div>
                 </div>
                 <div class="ht-right">
-                   
+                      <!-- Button trigger modal -->
+                        @guest 
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                             Login
                         </button>
-                   
-                                        <!-- Button trigger modal -->
-
-
+                        @endguest
+                     @auth                
+                    <a class="btn btn-primary" href="{{route('do-logout')}}">Logout</a>
+                    @endauth
                     <a class="btn btn-primary" href="{{route('registration')}}">Register</a>
 
 

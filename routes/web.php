@@ -24,7 +24,7 @@ Route::get('/',[HomeController::class,'home'])->name('home');
 Route::get('/registration',[FrontendCustomer::class,'registration'])->name('registration');
 Route::post('/do_registration',[FrontendCustomer::class,'do_registration'])->name('do-regitraton');
 Route::post('/do_login',[FrontendCustomer::class,'do_login'])->name('do-login');
-
+Route::get('/do_logout',[FrontendCustomer::class,'do_logout'])->name('do-logout');
 
 
 
