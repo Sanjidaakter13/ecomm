@@ -28,8 +28,17 @@ class CustomerController extends Controller
     public function do_login(Request $request)
     {
         $check=Auth::attempt([
-
+            'email'=>$request->email,
+            'password'=>$request->password, 
         ]);
+        return redirect()->route('home');
+    }
+
+    public function do_logout()
+    {
+        Auth::logout();
+
+        return redirect()->route('home');
     }
 }
 
