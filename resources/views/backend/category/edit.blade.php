@@ -2,7 +2,7 @@
 
 @section('content')
 
-<form>
+<form action="{{route('category.update')}}" method="post">
 @csrf
     <label for="">Name:</label>
     <input name="name"  type="text" class="form-control" value="{{$category->name}}">
@@ -17,7 +17,7 @@
         {{$category->description}}
     </textarea>
 
-<button> Update</button>
+<button type="submit" class="btn btn-success"> Update</button>
 </form>
 
 @endsection
