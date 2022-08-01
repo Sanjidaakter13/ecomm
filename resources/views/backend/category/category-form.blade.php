@@ -15,7 +15,7 @@
     <select class="custom-select custom-select-sm">
   <option name="category_status" selected>Open this select menu</option>
   <option value="1">Active</option>
-  <option value="2">Deactive</option>
+  <option value="2">Inactive</option>
 </select>
   </div>
 

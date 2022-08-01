@@ -38,7 +38,7 @@
        <li class="dropdown-item user-details">
         <a href="javaScript:void();">
            <div class="media">
-             <div class="avatar"> <img src="{{url('admin/assets/images/user.jpg')}}" class="logo-icon" alt="logo icon"></div>
+             <div class="avatar"> <img src="{{url('backend/assets/images/user.jpg')}}" class="logo-icon" alt="logo icon"></div>
             <div class="media-body">
             <h6 class="mt-2 user-title">Soeng Souy</h6>
             <p class="user-subtitle">soengsouy@gmail.com</p>

@@ -9,22 +9,22 @@
   <meta name="author" content=""/>
   <title>ECOMM</title>
   <!-- loader-->
-  <link href="{{url('admin/assets/css/pace.min.css')}}" rel="stylesheet"/>
-  <script src="{{url('admin/assets/js/pace.min.js')}}"></script>
+  <link href="{{url('backend/assets/css/pace.min.css')}}" rel="stylesheet"/>
+  <script src="{{url('backend/assets/js/pace.min.js')}}"></script>
   <!-- Vector CSS -->
-  <link href="{{url('admin/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css')}}" rel="stylesheet"/>
+  <link href="{{url('backend/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css')}}" rel="stylesheet"/>
   <!-- simplebar CSS-->
-  <link href="{{url('admin/assets/plugins/simplebar/css/simplebar.css')}}" rel="stylesheet"/>
+  <link href="{{url('backend/assets/plugins/simplebar/css/simplebar.css')}}" rel="stylesheet"/>
   <!-- Bootstrap core CSS-->
-  <link href="{{url('admin/assets/css/bootstrap.min.css')}}" rel="stylesheet"/>
+  <link href="{{url('backend/assets/css/bootstrap.min.css')}}" rel="stylesheet"/>
   <!-- animate CSS-->
-  <link href="{{url('admin/assets/css/animate.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{url('backend/assets/css/animate.css')}}" rel="stylesheet" type="text/css"/>
   <!-- Icons CSS-->
-  <link href="{{url('admin/assets/css/icons.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{url('backend/assets/css/icons.css')}}" rel="stylesheet" type="text/css"/>
   <!-- Sidebar CSS-->
-  <link href="{{url('admin/assets/css/sidebar-menu.css')}}" rel="stylesheet"/>
+  <link href="{{url('backend/assets/css/sidebar-menu.css')}}" rel="stylesheet"/>
   <!-- Custom Style-->
-  <link href="{{url('admin/assets/css/app-style.css')}}" rel="stylesheet"/>
+  <link href="{{url('backend/assets/css/app-style.css')}}" rel="stylesheet"/>
   
 </head>
 
@@ -110,24 +110,24 @@
   </div><!--End wrapper-->
 
   <!-- Bootstrap core JavaScript-->
-  <script src="{{url('admin/assets/js/jquery.min.js')}}"></script>
-  <script src="{{url('admin/assets/js/popper.min.js')}}"></script>
-  <script src="{{url('admin/assets/js/bootstrap.min.js')}}"></script>
+  <script src="{{url('backend/assets/js/jquery.min.js')}}"></script>
+  <script src="{{url('backend/assets/js/popper.min.js')}}"></script>
+  <script src="{{url('backend/assets/js/bootstrap.min.js')}}"></script>
 	
  <!-- simplebar js -->
-  <script src="{{url('admin/assets/plugins/simplebar/js/simplebar.js')}}"></script>
+  <script src="{{url('backend/assets/plugins/simplebar/js/simplebar.js')}}"></script>
   <!-- sidebar-menu js -->
-  <script src="{{url('admin/assets/js/sidebar-menu.js')}}"></script>
+  <script src="{{url('backend/assets/js/sidebar-menu.js')}}"></script>
   <!-- loader scripts -->
-  <script src="{{url('admin/assets/js/jquery.loading-indicator.js')}}"></script>
+  <script src="{{url('backend/assets/js/jquery.loading-indicator.js')}}"></script>
   <!-- Custom scripts -->
-  <script src="{{url('admin/assets/js/app-script.js')}}"></script>
+  <script src="{{url('backend/assets/js/app-script.js')}}"></script>
   <!-- Chart js -->
   
-  <script src="{{url('admin/assets/plugins/Chart.js/Chart.min.js')}}"></script>
+  <script src="{{url('backend/assets/plugins/Chart.js/Chart.min.js')}}"></script>
  
   <!-- Index js -->
-  <script src="{{url('admin/assets/js/index.js')}}"></script>
+  <script src="{{url('backend/assets/js/index.js')}}"></script>
 
   
 </body>

@@ -8,6 +8,7 @@ class Maincontroller extends Controller
 {
     public function master()
     {
+       
         return view('master');
     } 
 

@@ -30,10 +30,10 @@ Route::get('/do_logout',[FrontendCustomer::class,'do_logout'])->name('logout');
 
 
 
-Route::get('/admin',[Maincontroller::class, 'master']);
 Route::get('/dashboard',[Maincontroller::class, 'view'])->name('dashboard');
 
 
+Route::get('/admin',[Maincontroller::class, 'master'])->name('admin');
 
 Route::get('/product-list',[ProductController::class, 'list'])->name('product.list');
 Route::get('/product-form',[ProductController::class, 'form'])->name('product.form');
@@ -45,7 +45,7 @@ Route::post('/category-store',[CategoryController::class, 'store'])->name('categ
 Route::get('/category-delete/{id}',[CategoryController::class, 'delete'])->name('category.delete');
 Route::get('/category-view/{id}',[CategoryController::class, 'view'])->name('category.view');
 Route::get('/category-edit/{id}',[CategoryController::class, 'edit'])->name('category.edit');
-Route::get('/category-update/{id}',[CategoryController::class, 'update'])->name('category.update');
+Route::post('/category-update/{id}',[CategoryController::class, 'update'])->name('category.update');
 
 
 Route::get('/brand/list',[BrandController::class, 'list'])->name('brand.list');
