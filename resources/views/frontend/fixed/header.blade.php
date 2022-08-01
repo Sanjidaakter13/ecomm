@@ -23,7 +23,9 @@
                             Login
                         </button>
                   
-                                        <!-- Button trigger modal -->
+                        <!-- Button trigger modal -->
+
+                        <a class="btn btn-primary" href="{{route('registration')}}">Register</a>
                    @endguest
 
 
@@ -32,7 +34,7 @@
                   @endauth
     
 
-                    <a class="btn btn-primary" href="{{route('registration')}}">Register</a>
+                   
 
 
 
