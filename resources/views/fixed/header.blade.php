@@ -23,6 +23,7 @@
       <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
       <i class="fa fa-bell-o"></i></a>
     </li>
+    
     <li class="nav-item language">
       <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-flag"></i></a>
       <ul class="dropdown-menu dropdown-menu-right">
@@ -32,6 +33,9 @@
           <li class="dropdown-item"> <i class="flag-icon flag-icon-de mr-2"></i> German</li>
         </ul>
     </li>
+
+    <li><a class="btn btn-light" href="{{route('admin.logout')}}">Logout</a></li>
+
     <li class="nav-item">
      
       <ul class="dropdown-menu dropdown-menu-right">
