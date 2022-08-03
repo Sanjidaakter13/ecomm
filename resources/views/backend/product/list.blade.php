@@ -1,4 +1,4 @@
-@extends('master')
+@extends('backend.template.master')
 
 @section('content')
 <h3>Product list</h3>

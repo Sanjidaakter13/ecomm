@@ -31,7 +31,7 @@ Route::get('/do_logout',[FrontendCustomer::class,'do_logout'])->name('logout');
 
 Route::get('/admin/login',[MainController::class,'login'])->name('login');
 Route::post('/admin/do-login',[MainController::class,'doLogin'])->name('admin.login');
-Route::group(['middleware'=>['auth','CheckAdmin'],'prefix'=>'admin'],function(){
+Route::group(['middleware'=>['auth', 'checkAdmin'],'prefix'=>'admin'],function(){
 
 
     Route::get('/logout',[MainController::class,'logout'])->name('admin.logout');

@@ -1,4 +1,5 @@
-@extends('master')
+@extends('backend.template.master')
+
 @section('content')
 
 <table class="table">

@@ -10,25 +10,26 @@ class Maincontroller extends Controller
     public function index()
     {
        
-        return view('master');
+        return view('backend.template.master');
     } 
 
     public function view()
     {
-        return view('template.dashboard');
+        return view('backend.template.dashboard');
     }
 
     public function login()
     {
-        return view('backend.login');
+        return view('backend.login2');
     }
 
     public function doLogin(Request $request)
     {
-        Auth::attempt([
+        $check = Auth::attempt([
            'email'=>$request->email,
            'password'=>$request->password,
         ]);
+        // dd($check);
 
         return redirect()->route('admin');
     }
@@ -37,6 +38,6 @@ class Maincontroller extends Controller
     {
         Auth::logout();
 
-        return redirect()->route('login');
+        return redirect()->route('home');
     }
 }

@@ -13,7 +13,7 @@ class ProductController extends Controller
     public function list()
     {
         //variable= Model name::what we want to show
-        $productdata= Product::with('category')->OrderBy('id','desc')->paginate(2);
+        $productdata= Product::with('category')->OrderBy('id','desc')->paginate(5);
         
         return view ('backend.product.list',compact('productdata')) ;
     }

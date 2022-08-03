@@ -3,7 +3,7 @@
 @section('frontend.content')
 <section class="hero-section">
         <div class="hero-items owl-carousel">
-            <div class="single-hero-items set-bg" data-setbg="img/hero-1.jpg">
+            <div class="single-hero-items set-bg" data-setbg="https://preview.colorlib.com/theme/fashi/img/hero-1.jpg.webp">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5">
@@ -384,7 +384,7 @@
                 <h5><a href="#">colorlib_Collection</a></h5>
             </div>
         </div>
-        <div class="insta-item set-bg" data-setbg="img/insta-5.jpg">
+        <div class="insta-item set-bg" data-setbg="{{url('frontend/img/sanjida1.jpg')}}">
             <div class="inside-text">
                 <i class="ti-instagram"></i>
                 <h5><a href="#">colorlib_Collection</a></h5>

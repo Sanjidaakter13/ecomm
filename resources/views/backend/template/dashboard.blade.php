@@ -1,4 +1,4 @@
-@extends('master')
+@extends('backend.template.master')
 
 @section('content')
 	<div class="card mt-3">
