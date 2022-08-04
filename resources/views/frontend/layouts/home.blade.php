@@ -44,7 +44,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="img/xbanner-1.jpg.pagespeed.ic.WtoTbL-e6z.webp" alt=""
+                        <img src="https://preview.colorlib.com/theme/fashi/img/xbanner-1.jpg.pagespeed.ic.WtoTbL-e6z.webp" alt=""
                             data-pagespeed-url-hash="1662466408"
                             onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                         <div class="inner-text">
@@ -54,7 +54,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="img/xbanner-2.jpg.pagespeed.ic.N15HuVVX4r.webp" alt=""
+                        <img src="img/x" alt=""
                             data-pagespeed-url-hash="1956966329"
                             onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                         <div class="inner-text">
@@ -360,19 +360,19 @@
 
 
     <div class="instagram-photo">
-        <div class="insta-item set-bg" data-setbg="img/insta-1.jpg">
+        <div class="insta-item set-bg" data-setbg="{{url('frontend/img/babies dress.jpg')}}">
             <div class="inside-text">
                 <i class="ti-instagram"></i>
                 <h5><a href="#">colorlib_Collection</a></h5>
             </div>
         </div>
-        <div class="insta-item set-bg" data-setbg="img/insta-2.jpg">
+        <div class="insta-item set-bg" data-setbg="{{url('frontend/img/boot.jpg')}}">
             <div class="inside-text">
                 <i class="ti-instagram"></i>
                 <h5><a href="#">colorlib_Collection</a></h5>
             </div>
         </div>
-        <div class="insta-item set-bg" data-setbg="img/insta-3.jpg">
+        <div class="insta-item set-bg" data-setbg="{{url('frontend/img/ladies dress.png')}}">
             <div class="inside-text">
                 <i class="ti-instagram"></i>
                 <h5><a href="#">colorlib_Collection</a></h5>
