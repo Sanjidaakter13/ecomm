@@ -16,7 +16,7 @@
     @endif
 
 
-<form action="{{route('product.store')}}" method="post" >
+<form action="{{route('product.store')}}" method="post" encrypt="multipart/form-data">
  @csrf
     
     <div class="form-group">
@@ -30,6 +30,10 @@
     <div class="form-group">
       <label for="">Quantity*</label>
       <input  class="form-control"  type="number" name="quantity" id="" class="form-control" placeholder="Quantity" required min="1">
+    </div>
+    <div class="form-group">
+      <label for="">Image</label>
+      <input  class="form-control"  type="file" name="image" id="" class="form-control" placeholder="Image" >
     </div>
     <div class="form-group">
       <label for="">Description (optional)</label>

@@ -20,6 +20,7 @@ return new class extends Migration
             $table->double('product_quantity');
             $table->string('category_id');
             $table->string('product_description')->nullable();
+            $table->text('image')->nullable();
             $table->timestamps();
         });
     }

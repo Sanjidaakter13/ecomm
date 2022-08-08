@@ -23,5 +23,13 @@ class UsersTableSeeder extends Seeder
             'role'=>'admin',
 
         ]);
+
+        User::create([
+            'name'=>'sanjida',
+            'email'=>'sanjida@gmail.com',
+            'password'=>bcrypt('12345'),
+            'role'=>'admin',
+
+        ]);
     }
 }

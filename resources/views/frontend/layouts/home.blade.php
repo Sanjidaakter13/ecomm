@@ -3,14 +3,13 @@
 @section('frontend.content')
 <section class="hero-section">
         <div class="hero-items owl-carousel">
-            <div class="single-hero-items set-bg" data-setbg="https://preview.colorlib.com/theme/fashi/img/hero-1.jpg.webp">
+            <div class="single-hero-items set-bg" data-setbg="{{url('frontend/img/mom-and-baby.jpg')}}">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5">
                             <span>Bag,kids</span>
                             <h1>Black friday</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore</p>
+                        
                             <a href="#" class="primary-btn">Shop Now</a>
                         </div>
                     </div>
@@ -19,14 +18,13 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-items set-bg" data-setbg="img/hero-2.jpg">
+            <div class="single-hero-items set-bg" data-setbg="{{url('frontend/img/woman-models.jpg')}}">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5">
                             <span>Bag,kids</span>
                             <h1>Black friday</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore</p>
+                          
                             <a href="#" class="primary-btn">Shop Now</a>
                         </div>
                     </div>
@@ -44,7 +42,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="https://preview.colorlib.com/theme/fashi/img/xbanner-1.jpg.pagespeed.ic.WtoTbL-e6z.webp" alt=""
+                        <img style="height:218px;" src="{{url('frontend/img/man.jpg')}}" alt=""
                             data-pagespeed-url-hash="1662466408"
                             onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                         <div class="inner-text">
@@ -54,8 +52,8 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="img/x" alt=""
-                            data-pagespeed-url-hash="1956966329"
+                        <img style="height:218px;"src="{{url('frontend/img/woman-jacket.jpg')}}" alt=""
+                            data-pagespeed-url-hash="{{url('frontend/img/woman-jacket.jpg')}}"
                             onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                         <div class="inner-text">
                             <h4>Women’s</h4>
@@ -64,7 +62,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="img/xbanner-3.jpg.pagespeed.ic.BQA2S7WT5H.webp" alt=""
+                        <img style="height:218px;" src="{{url('frontend/img/kid.jpg')}}" alt=""
                             data-pagespeed-url-hash="2251466250"
                             onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                         <div class="inner-text">
@@ -81,7 +79,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="product-large set-bg" data-setbg="img/products/women-large.jpg">
+                    <div class="product-large set-bg" data-setbg="{{url('frontend/img/woman-sitting.jpg')}}">
                         <h2>Women’s</h2>
                         <a href="#">Discover More</a>
                     </div>
@@ -98,7 +96,7 @@
                     <div class="product-slider owl-carousel">
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/xwomen-1.jpg.pagespeed.ic.udWXoHOXDn.webp" alt=""
+                                <img style="height:200px" src="{{url('frontend/img/handbag2.jpg')}}" alt=""
                                     data-pagespeed-url-hash="950776255"
                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 <div class="sale">Sale</div>
@@ -112,7 +110,7 @@
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Coat</div>
+                                <div class="catagory-name">Bag</div>
                                 <a href="#">
                                     <h5>Pure Pineapple</h5>
                                 </a>
@@ -124,7 +122,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/xwomen-2.jpg.pagespeed.ic.9lv2o7iXWr.webp" alt=""
+                                <img style="height:200px" src="{{url('frontend/img/hoodie1.jpg')}}" alt=""
                                     data-pagespeed-url-hash="1245276176"
                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 <div class="icon">
@@ -137,7 +135,7 @@
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Shoes</div>
+                                <div class="catagory-name">hoodie</div>
                                 <a href="#">
                                     <h5>Guangzhou sweater</h5>
                                 </a>
@@ -148,7 +146,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/xwomen-3.jpg.pagespeed.ic.LSRJ8hNI2f.webp" alt=""
+                                <img style="height:200px" src="{{url('frontend/img/hoodie2.jpg')}}" alt=""
                                     data-pagespeed-url-hash="1539776097"
                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 <div class="icon">
@@ -161,7 +159,7 @@
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Towel</div>
+                                <div class="catagory-name">Hoodie</div>
                                 <a href="#">
                                     <h5>Pure Pineapple</h5>
                                 </a>
@@ -172,7 +170,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/xwomen-4.jpg.pagespeed.ic.PeeWeuIlTs.webp" alt=""
+                                <img style="height:200px" src="{{url('frontend/img/woman-shoes.jpg')}}" alt=""
                                     data-pagespeed-url-hash="1834276018"
                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 <div class="icon">
@@ -185,7 +183,7 @@
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Towel</div>
+                                <div class="catagory-name">Shoes</div>
                                 <a href="#">
                                     <h5>Converse Shoes</h5>
                                 </a>
@@ -360,37 +358,37 @@
 
 
     <div class="instagram-photo">
-        <div class="insta-item set-bg" data-setbg="{{url('frontend/img/babies dress.jpg')}}">
+        <div class="insta-item set-bg" data-setbg="{{url('frontend/img/babiesdress.jpg')}}">
             <div class="inside-text">
                 <i class="ti-instagram"></i>
                 <h5><a href="#">colorlib_Collection</a></h5>
             </div>
         </div>
-        <div class="insta-item set-bg" data-setbg="{{url('frontend/img/boot.jpg')}}">
+        <div class="insta-item set-bg" data-setbg="{{url('frontend/img/kids-on.jpg')}}">
             <div class="inside-text">
                 <i class="ti-instagram"></i>
                 <h5><a href="#">colorlib_Collection</a></h5>
             </div>
         </div>
-        <div class="insta-item set-bg" data-setbg="{{url('frontend/img/ladies dress.png')}}">
+        <div class="insta-item set-bg" data-setbg="{{url('frontend/img/ladiesdress.png')}}">
             <div class="inside-text">
                 <i class="ti-instagram"></i>
                 <h5><a href="#">colorlib_Collection</a></h5>
             </div>
         </div>
-        <div class="insta-item set-bg" data-setbg="img/insta-4.jpg">
+        <div class="insta-item set-bg" data-setbg="{{url('frontend/img/image.jpg')}}">
             <div class="inside-text">
                 <i class="ti-instagram"></i>
                 <h5><a href="#">colorlib_Collection</a></h5>
             </div>
         </div>
-        <div class="insta-item set-bg" data-setbg="{{url('frontend/img/sanjida1.jpg')}}">
+        <div class="insta-item set-bg" data-setbg="{{url('frontend/img/mirrorbaby.jpg')}}">
             <div class="inside-text">
                 <i class="ti-instagram"></i>
                 <h5><a href="#">colorlib_Collection</a></h5>
             </div>
         </div>
-        <div class="insta-item set-bg" data-setbg="img/insta-6.jpg">
+        <div class="insta-item set-bg" data-setbg="{{url('frontend/img/umbrella-girl.jpg')}}">
             <div class="inside-text">
                 <i class="ti-instagram"></i>
                 <h5><a href="#">colorlib_Collection</a></h5>
