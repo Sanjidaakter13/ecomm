@@ -26,7 +26,7 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-
+// dd($request->all());
         $request->validate([
             //input field name=> validation rule
             'name'=>'required',
@@ -34,12 +34,24 @@ class ProductController extends Controller
             'quantity'=>'required|integer|min:1',
             'category'=> 'required',
         ]);
-    //    dd($request->all());
+
+    if($request->hasFile('image'))
+    {
+// dd($request->image);
+
+        $file=$request->file('image');
+        $filerename="product_".rand(0,100000).date('Ymdhis').".".$file->getClientOriginalExtension();
+        $file->storeAs('products',$filerename);
+    }
+      // dd($request->all());
+
+
         Product::create([
         //migration column name => blade input field name
         'product_name' => $request->name,
         'product_price'=>$request->price,
         'product_quantity'=>$request->quantity,
+        'image'=>$filerename,
         'product_description'=>$request->description,
         //After adding category to product table
         'category_id' => $request->category,
