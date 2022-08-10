@@ -251,21 +251,25 @@
                         </a>
                     </div>
                 </div>
+
+            <!--searching-->
                 <div class="col-lg-7 col-md-7">
                     <div class="advanced-search">
-                        <div class="nav-depart">
-                            <div class="depart-btn">
+                        <button type="button" class="category-btn">All Categories</button>
 
-                               
-                            </div>
+
+                    <form action="{{route('search')}}" method="get" >
+                        <div class="input-group"> 
+                            <input class="my-2" type="text" name="search_product"  placeholder="What do you need?">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
-                        <button type="button" class="category-btn">All Categories </button>
-                        <div class="input-group">
-                            <input type="text" placeholder="What do you need?">
-                            <button type="button"><i class="ti-search"></i></button>
-                        </div>
+                     </form>
+
+
                     </div>
                 </div>
+           
+
                 <div class="col-lg-3 text-right col-md-3">
                     <ul class="nav-right">
                         <li class="heart-icon">
