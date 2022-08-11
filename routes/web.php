@@ -8,6 +8,7 @@ use App\Http\Controllers\Backend\CustomerController;
 use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\CustomerController as FrontendCustomer;
+use App\Http\Controllers\Frontend\CategoryController as FrontendCategory;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,7 @@ Route::post('/do_registration',[FrontendCustomer::class,'do_registration'])->nam
 Route::post('/do_login',[FrontendCustomer::class,'do_login'])->name('do-login');
 Route::get('/do_logout',[FrontendCustomer::class,'do_logout'])->name('logout');
 Route::get('/search',[HomeController::class,'search'])->name('search');
+Route::get('/show-category/{id}',[FrontendCategory::class,'show_category'])->name('show-category');
 
 
 
