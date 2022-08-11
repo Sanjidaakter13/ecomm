@@ -3,7 +3,7 @@
 @section('frontend.content')
 <section class="hero-section">
         <div class="hero-items owl-carousel">
-            <div class="single-hero-items set-bg" data-setbg="{{url('frontend/img/mom-and-baby.jpg')}}">
+            <div class="single-hero-items set-bg" data-setbg="{{url('frontend/img/freestocks-woman.jpg')}}">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5">
@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-items set-bg" data-setbg="{{url('frontend/img/woman-models.jpg')}}">
+            <div class="single-hero-items set-bg" data-setbg="{{url('frontend/img/sitting-on-roof.jpg')}}">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5">
@@ -79,7 +79,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="product-large set-bg" data-setbg="{{url('frontend/img/woman-sitting.jpg')}}">
+                    <div class="product-large set-bg" data-setbg="{{url('frontend/img/ladies-fashion.jpg')}}">
                         <h2>Women’s</h2>
                         <a href="#">Discover More</a>
                     </div>
