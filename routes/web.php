@@ -21,6 +21,7 @@ use App\Http\Controllers\Frontend\CategoryController as FrontendCategory;
 |
 */
 Route::get('/',[HomeController::class,'home'])->name('home');
+Route::get('/shop',[HomeController::class,'shop'])->name('shop');
 //Route::get('/view-home',[HomeController::class,'view_home'])->name('home.view');
 Route::get('/registration',[FrontendCustomer::class,'registration'])->name('registration');
 Route::post('/do_registration',[FrontendCustomer::class,'do_registration'])->name('do-regitraton');

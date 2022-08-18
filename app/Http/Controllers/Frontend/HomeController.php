@@ -22,6 +22,16 @@ class HomeController extends Controller
       return view('frontend.layouts.home',compact('categories','products'));
     }
 
+    public function shop()
+    {
+      // dd('hghk');
+      $products=Product::all();
+      $categories=Category::all();
+
+
+      return view('frontend.layouts.shop', compact('categories','`products`'));
+    }
+
 
     public function search(Request $request)
     {
