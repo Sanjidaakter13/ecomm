@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <div class="single-hero-items set-bg" data-setbg="{{url('frontend/img/ladies-fashion.jpg')}}">
+        <div class="single-hero-items set-bg" data-setbg="{{url('frontend/img/girl-pointing-left.png')}}">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">

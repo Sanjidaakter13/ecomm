@@ -31,5 +31,13 @@ class UsersTableSeeder extends Seeder
             'role'=>'admin',
 
         ]);
+
+        User::create([
+            'name'=>'dina',
+            'email'=>'dina@gmail.com',
+            'password'=>bcrypt('12345'),
+            'role'=>'admin',
+
+        ]);
     }
 }

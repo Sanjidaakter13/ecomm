@@ -44,8 +44,8 @@
            <div class="media">
              <div class="avatar"> <img src="{{url('backend/assets/images/user.jpg')}}" class="logo-icon" alt="logo icon"></div>
             <div class="media-body">
-            <h6 class="mt-2 user-title">Soeng Souy</h6>
-            <p class="user-subtitle">soengsouy@gmail.com</p>
+            <h6 class="mt-2 user-title">Sanjida Akter</h6>
+            <p class="user-subtitle">Sanjida Akter@gmail.com</p>
             </div>
            </div>
           </a>

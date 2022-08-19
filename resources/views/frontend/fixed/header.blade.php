@@ -280,8 +280,8 @@
                         </li>
                         <li class="cart-icon">
                             <a href="#">
-                                <i class="icon_bag_alt"></i>
-                                <span>3</span>
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                            
                             </a>
                             <div class="cart-hover">
                                 <div class="select-items">
