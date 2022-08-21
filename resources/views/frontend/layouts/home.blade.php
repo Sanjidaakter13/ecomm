@@ -102,10 +102,10 @@
 
                     <div class="product-item">
                         <div class="pi-pic">
-                            <img style="height:200px" src="{{url('uploads/products' .'/'.$product->image)}}" alt=""
+                            <img style="height:250px" src="{{url('uploads/products' .'/'.$product->image)}}" alt=""
                                 data-pagespeed-url-hash="950776255"
                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                            <div class="sale">Sale</div>
+                            
                             <div class="icon">
                                 <i class="icon_heart_alt"></i>
                             </div>
@@ -116,13 +116,13 @@
                             </ul>
                         </div>
                         <div class="pi-text">
-                            <div class="catagory-name">Bag</div>
+                            <div class="catagory-name"></div>
                             <a href="#">
-                                <h5>Pure Pineapple</h5>
+                                <h5>{{$product->product_name}}</h5>
                             </a>
                             <div class="product-price">
-                                $14.00
-                                <span>$35.00</span>
+                               BDT. {{$product->product_price}}
+                               
                             </div>
                         </div>
                     </div>

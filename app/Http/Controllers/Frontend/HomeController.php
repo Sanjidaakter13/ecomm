@@ -29,7 +29,7 @@ class HomeController extends Controller
       $categories=Category::all();
 
 
-      return view('frontend.layouts.shop', compact('categories','`products`'));
+      return view('frontend.layouts.shop', compact('categories','products'));
     }
 
 
