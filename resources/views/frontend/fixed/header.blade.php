@@ -279,9 +279,8 @@
                             </a>
                         </li>
                         <li class="cart-icon">
-                            <a href="#">
+                            <a href="{{route('cart-view')}}">
                             <i class="fa-solid fa-cart-arrow-down"></i>
-                            
                             </a>
                             <div class="cart-hover">
                                 <div class="select-items">

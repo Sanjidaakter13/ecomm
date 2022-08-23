@@ -196,7 +196,7 @@
                     <div class="col">
                         <h4><b>Shopping Cart</b></h4>
                     </div>
-                    <div class="col align-self-center text-right text-muted">3 items</div>
+                  
                 </div>
             </div>
 
@@ -209,6 +209,7 @@
     @endphp
 
 
+@if(session()->has('cart'))
 
         @foreach($cartdata as $data)
             <div class="row border-top border-bottom">
@@ -226,8 +227,14 @@
             </div>
         @endforeach
 
+    @else
+    <p>No cart product available</p>
+    @endif
 
-            <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Back to shop</span></div>
+
+           <br><div> <a href="{{route('shop')}}">&leftarrow;Back to shop</a>
+           <a href="{{route('cart-clear')}}" class="col align-self-center text-right" style="float:right">Clear cart</a>
+           </div>
         </div>
         <div class="col-md-4 summary">
             <div>

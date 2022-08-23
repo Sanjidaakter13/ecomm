@@ -12,6 +12,7 @@ class CartController extends Controller
 {
     public function add_to_cart($id)
     {
+        // dd('i am comming');
         $product = Product::find($id);
 
 // dd($product);
@@ -34,8 +35,9 @@ class CartController extends Controller
                 ] 
             ];
             session()->put('cart', $newcart);
-        // dd(session()->get('cart'));
-            // return view('frontend.layouts.cart');
+        // // dd(session()->get('cart'));
+        //      return view('frontend.layouts.cart');
+        return redirect()->back();
 
         }
 
@@ -69,13 +71,22 @@ class CartController extends Controller
             // dd($getcart);
 
         }
-        // return view('frontend.layouts.cart');
-        return redirect()->route('shop');
+        //  return view('frontend.layouts.cart');
+       return redirect()->back();
     }
 
-    public function cart()
+    public function cart_view()
     {
         return view('frontend.layouts.cart');
 
+    }
+
+    public function cart_clear()
+    {
+       // dd('hff');
+        session()->forget('cart');
+        // dd(session()->get('cart'));
+
+        return redirect()->route('cart-view');
     }
 }
