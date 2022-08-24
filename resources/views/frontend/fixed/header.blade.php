@@ -280,7 +280,7 @@
                         </li>
                         <li class="cart-icon">
                             <a href="{{route('cart-view')}}">
-                            <i class="fa-solid fa-cart-arrow-down"></i>
+                            <i class="fa-solid fa-cart-arrow-down">({{session()->has('cart') ? count(session()->get('cart')) : 0}})</i>
                             </a>
                             <div class="cart-hover">
                                 <div class="select-items">

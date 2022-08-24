@@ -203,7 +203,7 @@
 
     @php
        $cartdata=session()->get('cart');
-
+       $total=0;
 
       
     @endphp
@@ -222,18 +222,22 @@
                     <div class="row text-muted"></div>
                         <a href="#">-</a><a href="#" class="border">{{$data['quantity']}}</a><a href="#">+</a>
                     </div>
-                    <div class="col">BDT.{{$data['price']}} <span class="close">&#10005;</span></div>
+                    <div class="col">BDT.{{$data['price']}}x{{$data['quantity']}}={{$data['subtotal']}} <span class="close">&#10005;</span></div>
+
+                    @php
+                    $total=$total+$data['subtotal'];
+                    @endphp
+
                 </div>
             </div>
         @endforeach
 
     @else
-    <p>No cart product available</p>
+    <p>No product available</p>
     @endif
 
 
-           <br><div> <a href="{{route('shop')}}">&leftarrow;Back to shop</a>
-           <a href="{{route('cart-clear')}}" class="col align-self-center text-right" style="float:right">Clear cart</a>
+           <br><div> <a href="{{route('shop')}}"><h4>&leftarrow;Back to shop</h4></a>
            </div>
         </div>
         <div class="col-md-4 summary">
@@ -241,10 +245,7 @@
                 <h5><b>Summary</b></h5>
             </div>
             <hr>
-            <div class="row">
-                <div class="col" style="padding-left:0;">ITEMS 3</div>
-                <div class="col text-right">&euro; 132.00</div>
-            </div>
+
             <form>
                 <p>SHIPPING</p>
                 <select>
@@ -254,10 +255,12 @@
                 <input id="code" placeholder="Enter your code">
             </form>
             <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-                <div class="col">TOTAL PRICE</div>
-                <div class="col text-right">&euro; 137.00</div>
+                <div class="col">Total price={{$total}}</div>
+        
             </div>
-            <button class="btn">CHECKOUT</button>
+            <div class="btn btn-dark" >
+                <a href="{{route('cart-clear')}}" style="color:white;">CLEAR CART</a>
+            </div>
         </div>
     </div>
 

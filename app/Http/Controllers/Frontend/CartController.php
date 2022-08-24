@@ -32,6 +32,7 @@ class CartController extends Controller
                     'quantity' => 1,
                     'image' => $product->image,
                     'price' => $product->product_price,
+                    'subtotal'=>$product->product_price*1,
                 ] 
             ];
             session()->put('cart', $newcart);
@@ -49,6 +50,7 @@ class CartController extends Controller
             //product exist
 
              $getcart[$id]['quantity']=$getcart[$id]['quantity']+1;
+             $getcart[$id]['subtotal']=$getcart[$id]['quantity']*$getcart[$id]['price'];
              session()->put('cart',$getcart);
  
          }
@@ -66,6 +68,7 @@ class CartController extends Controller
                 'quantity' => 1,
                 'image' => $product->image,
                 'price' => $product->product_price,
+                'subtotal'=>$product->product_price*1,
             ];
             session()->put('cart', $getcart);
             // dd($getcart);
