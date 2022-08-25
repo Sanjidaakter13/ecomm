@@ -218,10 +218,12 @@
                     <div class="col">
                         <div class="row">{{$data['name']}}</div>
                     </div>
+                    <form action="{{route('cart-update')}}" method="get">
                     <div class="col">
                     <div class="row text-muted"></div>
                         <a href="#">-</a><a href="#" class="border">{{$data['quantity']}}</a><a href="#">+</a>
                     </div>
+                    </form>
                     <div class="col">BDT.{{$data['price']}}x{{$data['quantity']}}={{$data['subtotal']}} <span class="close">&#10005;</span></div>
 
                     @php

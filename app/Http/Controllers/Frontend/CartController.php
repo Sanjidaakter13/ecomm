@@ -92,4 +92,9 @@ class CartController extends Controller
 
         return redirect()->route('cart-view');
     }
+
+    public function cart_update()
+    {
+        
+    }
 }
