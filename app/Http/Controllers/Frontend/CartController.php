@@ -93,8 +93,17 @@ class CartController extends Controller
         return redirect()->route('cart-view');
     }
 
-    public function cart_update()
+    public function cart_update(Request $request, $id)
     {
-        
+        // dd($request->all());
+
+        $getcart=session()->get('cart');
+        $getcart[$id]['quantity']=$request->product_quantity;
+        session()->put('cart', $getcart);
+// dd(session()->get('cart'));
+       return redirect()->back();
+
+
+
     }
 }

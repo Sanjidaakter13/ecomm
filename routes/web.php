@@ -33,7 +33,7 @@ Route::get('/show-category/{id}',[FrontendCategory::class,'show_category'])->nam
 Route::get('/add_to_cart/{id}',[CartController::class,'add_to_cart'])->name('add-to-cart');
 Route::get('/cart_view', [CartController::class, 'cart_view'])->name('cart-view');
 Route::get('/cart_clear', [CartController::class, 'cart_clear'])->name('cart-clear');
-Route::get('/cart_update', [CartController::class, 'cart_update'])->name('cart-update');
+Route::get('/cart_update/{id}', [CartController::class, 'cart_update'])->name('cart-update');
 
 
 

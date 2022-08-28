@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <style>
     body {
@@ -196,35 +196,42 @@
                     <div class="col">
                         <h4><b>Shopping Cart</b></h4>
                     </div>
-                  
+
                 </div>
             </div>
 
 
-    @php
-       $cartdata=session()->get('cart');
-       $total=0;
-
-      
-    @endphp
+            @php
+            $cartdata=session()->get('cart');
+            $total=0;
 
 
-@if(session()->has('cart'))
+            @endphp
 
-        @foreach($cartdata as $data)
+
+            @if(session()->has('cart'))
+
+            @foreach($cartdata as $data)
+
             <div class="row border-top border-bottom">
                 <div class="row main align-items-center">
                     <div class="col-2"><img class="img-fluid" src="{{url('uploads/products/' . $data['image'])}}"></div>
                     <div class="col">
                         <div class="row">{{$data['name']}}</div>
                     </div>
-                    <form action="{{route('cart-update')}}" method="get">
-                    <div class="col">
-                    <div class="row text-muted"></div>
-                        <a href="#">-</a><a href="#" class="border">{{$data['quantity']}}</a><a href="#">+</a>
-                    </div>
+
+                    <form action="{{route('cart-update', $data['id'])}}" method="get">
+                        <div class="col" style="width:100px">
+
+                            <input type="number" name="product_quantity" class="form-control" placeholder="{{$data['quantity']}}">
+
+                                <button type="submit"  class="btn btn-update">Update</button>
+
+                        </div>
                     </form>
-                    <div class="col">BDT.{{$data['price']}}x{{$data['quantity']}}={{$data['subtotal']}} <span class="close">&#10005;</span></div>
+
+                    <div class="col">BDT.{{$data['price']}}x{{$data['quantity']}}={{$data['subtotal']}} <span
+                            class="close">&#10005;</span></div>
 
                     @php
                     $total=$total+$data['subtotal'];
@@ -232,15 +239,18 @@
 
                 </div>
             </div>
-        @endforeach
+            @endforeach
 
-    @else
-    <p>No product available</p>
-    @endif
+            @else
+            <p>No product is available</p>
+            @endif
 
 
-           <br><div> <a href="{{route('shop')}}"><h4>&leftarrow;Back to shop</h4></a>
-           </div>
+            <br>
+            <div> <a href="{{route('shop')}}">
+                    <h4>&leftarrow;Back to shop</h4>
+                </a>
+            </div>
         </div>
         <div class="col-md-4 summary">
             <div>
@@ -258,14 +268,12 @@
             </form>
             <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
                 <div class="col">Total price={{$total}}</div>
-        
+
             </div>
-            <div class="btn btn-dark" >
+            <div class="btn btn-dark">
                 <a href="{{route('cart-clear')}}" style="color:white;">CLEAR CART</a>
             </div>
         </div>
     </div>
 
 </div>
-
-
