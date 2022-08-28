@@ -102,8 +102,13 @@ class CartController extends Controller
         session()->put('cart', $getcart);
 // dd(session()->get('cart'));
        return redirect()->back();
+    }
 
-
-
+    public function cart_delete($id) 
+    {
+        $getcart=session()->get('cart');
+        unset($getcart[$id]);
+        session()->put('cart', $getcart);
+        return redirect()->back();
     }
 }

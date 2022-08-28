@@ -5,6 +5,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+
+<script src="https://kit.fontawesome.com/1a255e1315.js" crossorigin="anonymous"></script>
+
 <style>
     body {
         background: #ddd;
@@ -230,9 +233,8 @@
                         </div>
                     </form>
 
-                    <div class="col">BDT.{{$data['price']}}x{{$data['quantity']}}={{$data['subtotal']}} <span
-                            class="close">&#10005;</span></div>
-
+                    <div class="col">BDT.{{$data['price']}}x{{$data['quantity']}}={{$data['subtotal']}}</div>
+                   <a href="{{route('cart-delete',$data['id'])}}"> <span class="close">&#10005;</span></a>
                     @php
                     $total=$total+$data['subtotal'];
                     @endphp
@@ -263,7 +265,7 @@
                 <select>
                     <option class="text-muted">Standard-Delivery- &euro;5.00</option>
                 </select>
-                <p>GIVE CODE</p>
+                <p>GIVE CODE  <i class="bi bi-trash3-fill"></i></p>
                 <input id="code" placeholder="Enter your code">
             </form>
             <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
@@ -276,4 +278,5 @@
         </div>
     </div>
 
-</div>
+</div><script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
