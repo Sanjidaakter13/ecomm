@@ -21,13 +21,16 @@ use App\Http\Controllers\Frontend\CategoryController as FrontendCategory;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//view frontend
 Route::get('/',[HomeController::class,'home'])->name('home');
+//shop route
 Route::get('/shop',[HomeController::class,'shop'])->name('shop');
-//Route::get('/view-home',[HomeController::class,'view_home'])->name('home.view');
+//auth route
 Route::get('/registration',[FrontendCustomer::class,'registration'])->name('registration');
 Route::post('/do_registration',[FrontendCustomer::class,'do_registration'])->name('do-regitraton');
 Route::post('/do_login',[FrontendCustomer::class,'do_login'])->name('do-login');
 Route::get('/do_logout',[FrontendCustomer::class,'do_logout'])->name('logout');
+
 Route::get('/search',[HomeController::class,'search'])->name('search');
 Route::get('/show-category/{id}',[FrontendCategory::class,'show_category'])->name('show-category');
 Route::get('/add_to_cart/{id}',[CartController::class,'add_to_cart'])->name('add-to-cart');

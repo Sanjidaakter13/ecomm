@@ -99,6 +99,7 @@ class CartController extends Controller
 
         $getcart=session()->get('cart');
         $getcart[$id]['quantity']=$request->product_quantity;
+        $getcart[$id]['subtotal']=$getcart[$id]['quantity']*$getcart[$id]['price'];
         session()->put('cart', $getcart);
 // dd(session()->get('cart'));
        return redirect()->back();

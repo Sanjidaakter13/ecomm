@@ -213,7 +213,7 @@
 
 
             @if(session()->has('cart'))
-
+ 
             @foreach($cartdata as $data)
 
             <div class="row border-top border-bottom">
@@ -226,7 +226,7 @@
                     <form action="{{route('cart-update', $data['id'])}}" method="get">
                         <div class="col" style="width:100px">
 
-                            <input type="number" name="product_quantity" class="form-control" placeholder="{{$data['quantity']}}">
+                            <input type="number" name="product_quantity" class="form-control" placeholder="{{$data['quantity']}}" max='100' min='1'>
 
                                 <button type="submit"  class="btn btn-update">Update</button>
 
