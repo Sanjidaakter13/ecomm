@@ -8,6 +8,7 @@ use App\Http\Controllers\Backend\CustomerController;
 use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Frontend\HomeController; 
 use App\Http\Controllers\Frontend\CartController;
+use App\Http\Controllers\Backend\OrderController;
 use App\Http\Controllers\Frontend\CustomerController as FrontendCustomer;
 use App\Http\Controllers\Frontend\CategoryController as FrontendCategory;
 
@@ -30,16 +31,19 @@ Route::get('/registration',[FrontendCustomer::class,'registration'])->name('regi
 Route::post('/do_registration',[FrontendCustomer::class,'do_registration'])->name('do-regitraton');
 Route::post('/do_login',[FrontendCustomer::class,'do_login'])->name('do-login');
 Route::get('/do_logout',[FrontendCustomer::class,'do_logout'])->name('logout');
-
+//searching
 Route::get('/search',[HomeController::class,'search'])->name('search');
+//home show
 Route::get('/show-category/{id}',[FrontendCategory::class,'show_category'])->name('show-category');
+//add to cart
 Route::get('/add_to_cart/{id}',[CartController::class,'add_to_cart'])->name('add-to-cart');
 Route::get('/cart_view', [CartController::class, 'cart_view'])->name('cart-view');
 Route::get('/cart_clear', [CartController::class, 'cart_clear'])->name('cart-clear');
 Route::get('/cart_update/{id}', [CartController::class, 'cart_update'])->name('cart-update');
 Route::get('/cart_delete/{id}', [CartController::class, 'cart_delete'])->name('cart-delete');
 
-
+//order 
+route::get('/order_place',[OrderController::class,'order'])->name('order');
 
 
 

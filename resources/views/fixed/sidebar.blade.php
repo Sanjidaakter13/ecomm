@@ -26,7 +26,11 @@
             </a>
         </li>
 
-
+        <li>
+            <a href="{{route('order')}}">
+                <i class="zmdi zmdi-grid"></i> <span>Orders</span>
+            </a>
+        </li>
 
         <li>
             <a href="forms.html">

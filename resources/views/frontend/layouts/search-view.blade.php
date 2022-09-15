@@ -300,7 +300,7 @@
 
                     <div class="d-flex justify-content-between align-items-center">
 
-                        <h5 class="dress-name">{{$product->product_name}}</h5></h5>
+                        <h5 class="dress-name">{{$product->product_name}}</h5>
 
                         <div class="d-flex flex-column mb-2">
 
