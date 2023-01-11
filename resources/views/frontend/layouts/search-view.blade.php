@@ -334,7 +334,7 @@
 
 
                     <div class="d-flex justify-content-between align-items-center pt-1">
-                        <div>
+                        <div>+
                             <i class="fa fa-star-o rating-star"></i>
                             <span class="rating-number">4.8</span>
                         </div>
